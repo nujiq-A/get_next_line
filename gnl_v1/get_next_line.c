@@ -103,3 +103,10 @@ char	*get_next_line(int fd)
 	a = a_back(a);
 	return (b);
 }
+
+int	main(void)
+{
+	int	fd = open("a.txt", O_RDONLY);
+
+	printf("%s", get_next_line(fd));
+}
